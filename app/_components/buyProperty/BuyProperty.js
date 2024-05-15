@@ -51,10 +51,6 @@ export default function BuyProperty() {
           </div>
           <hr className="-mt-12 sm:mb-5 sm:border-4 border-4 2xl:hidden xl:hidden lg:hidden md:hidden sm:block block mb-7" />
           <div className="sm:mb-24 mb-24">
-            {/* <img
-              src="vector 2.png"
-              //   alt=""
-            /> */}
             <Image
               src={pngs.vector}
               className="opacity-100 2xl:w-full xl:w-full lg:w-full md:w-full  sm:w-3/6 sm:m-auto  w-3/6 m-auto   "

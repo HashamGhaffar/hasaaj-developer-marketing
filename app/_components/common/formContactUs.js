@@ -1,6 +1,4 @@
 "use client";
-// import { svgs } from "@/app/_constants/assets";
-// import Image from "next/image";
 import React, { useState } from "react";
 import InputElement from "../common/inputElement";
 import Button from "../common/button";

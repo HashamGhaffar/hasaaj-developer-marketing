@@ -4,7 +4,7 @@ import Hedding from "../common/hedding";
 export default function PropertyExperts() {
   return (
     <>
-      <div className="flex flex-col	justify-center items-center bg-[#F1F1F1]">
+      <div className="flex flex-col	justify-center items-center">
         <div>
           <Hedding hedding="We Have" span="" />
           <Hedding hedding="Professional Property" span="Experts" />

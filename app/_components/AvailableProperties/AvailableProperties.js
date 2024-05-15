@@ -1,7 +1,6 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-
 import FirstCard from "../common/firstCard";
 import Hedding from "../common/hedding";
 import Carousel from "../common/slider";
@@ -66,11 +65,10 @@ export default function AvailableProperties() {
   return (
     <>
       <section>
-        <div className="flex flex-wrap md:flex-nowrap gap-y-[30px] sm:gap-x-[40px] lg:gap-x-[9%] pb-[80px]">
+        <div className="flex items-baseline flex-wrap md:flex-nowrap gap-y-[40px] sm:gap-x-[40px] lg:gap-x-[9%] pb-[80px]">
           <FirstCard
             img={pngs.buyAndSell}
             hedding="Buy & Sell of Properties"
-            ing="Buy & Sell of Properties"
             typography="If you are looking to invest your money in a plot, pre-made houses, or commercial shops we have extensive plans for our customers for all their needs. We also help them with personalized investment plans."
           />
           <FirstCard

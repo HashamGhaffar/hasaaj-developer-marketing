@@ -25,15 +25,17 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <BuyProperty />
+          <BuyProperty /> {/* section prepared by abdulla brother */}
         </div>
-        <section className="bg-[#F1F1F1] p-[6%]">
+        <section className=" p-[6%]">
           <AvailableProperties />
         </section>
-        <section className="w-[88.056%] m-[auto] mt-[37px]">
-          <HappyClients />
+        <section className="bg-[#F1F1F1]">
+          <div className="w-[88.056%] m-[auto] pt-[75px] ">
+            <HappyClients />
+          </div>
         </section>
-        <section className="bg-[#F1F1F1] p-[6%]">
+        <section className="bg-[#ffffff] p-[6%]">
           <PropertyExperts />
         </section>
       </div>
