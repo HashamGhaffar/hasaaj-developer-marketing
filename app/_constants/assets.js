@@ -11,13 +11,18 @@ export const pngs = {
   plopForSale: "/png/PlotForSale.png",
   robertMartin: "/png/RobertMartin.png",
   vector: "/png/vector2.png",
+  group: "/png/Group.png",
 };
 
 export const svgs = {
   builders: "/svg/builders.svg",
+  buildersWhite: "/svg/buildersWhite.svg",
   goldenStar: "/svg/GoldenStar.svg",
   hamburger: "/svg/hamburger.svg",
   rightArrow: "/svg/RightArrow.svg",
   LeftArrow: "/svg/LeftArrow.svg",
   silverStar: "/svg/SilverStar.svg",
+  phone: "/svg/phone.svg",
+  message: "/svg/message.svg",
+  location: "/svg/location.svg",
 };
