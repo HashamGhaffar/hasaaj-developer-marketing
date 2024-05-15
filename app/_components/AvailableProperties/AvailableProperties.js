@@ -70,6 +70,7 @@ export default function AvailableProperties() {
           <FirstCard
             img={pngs.buyAndSell}
             hedding="Buy & Sell of Properties"
+            ing="Buy & Sell of Properties"
             typography="If you are looking to invest your money in a plot, pre-made houses, or commercial shops we have extensive plans for our customers for all their needs. We also help them with personalized investment plans."
           />
           <FirstCard
@@ -87,7 +88,7 @@ export default function AvailableProperties() {
           <Hedding hedding="Properties Available in" span="Lahore" />
         </div>
         <div>
-          <div className="slider-container relative space-x-4">
+          <div className="slider-container relative space-x-4 sm:space-x-6">
             <Carousel sliderRef={sliderRef} settings={carouselSettings}>
               <AvailablePropertyCard
                 typography="Houses for Rent"
@@ -103,7 +104,7 @@ export default function AvailableProperties() {
               />
             </Carousel>
             <div
-              className="bg-[#ffffff] h-[43px] w-[43px] rounded-[50%] absolute top-[39%] right-[5px]"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[44%] sm:top-[39%] right-[5px]"
               onClick={nextSlide}
             >
               <Image
@@ -111,11 +112,11 @@ export default function AvailableProperties() {
                 alt="RightArrow"
                 height={24}
                 width={24}
-                className="mt-[13px] ml-[10px]"
+                className="h-[20px] w-[20px] mt-[5px] sm:mt-[13px] ml-[5px] sm:ml-[10px]"
               />
             </div>
             <div
-              className="bg-[#ffffff] h-[43px] w-[43px] rounded-[50%] absolute top-[39%] left-[-10px]	"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[44%] sm:top-[39%] left-[-10px]	"
               onClick={prevSlide}
             >
               <Image
@@ -123,7 +124,7 @@ export default function AvailableProperties() {
                 alt="RightArrow"
                 height={24}
                 width={24}
-                className="mt-[13px] ml-[10px]"
+                className="h-[20px] w-[20px] mt-[5px] sm:mt-[13px] ml-[4px] sm:ml-[10px]"
               />
             </div>
           </div>

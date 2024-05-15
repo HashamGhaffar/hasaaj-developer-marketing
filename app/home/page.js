@@ -1,5 +1,4 @@
 "use client";
-// import Image from "next/image";
 import NavBar from "../_components/common/navbar";
 import Carousel from "../_components/common/slider";
 import MultipleItems from "../_components/common/slider";
@@ -7,7 +6,7 @@ import AvailableProperties from "../_components/AvailableProperties/AvailablePro
 import HappyClients from "../_components/happyClients/HappyClients";
 import PropertyExperts from "../_components/propertyExperts/propertyExperts";
 import BuyProperty from "../_components/buyProperty/BuyProperty";
-// import MultipleItems from
+import { svgs } from "@/app/_constants/assets";
 
 export default function Home() {
   const carouselSettings = {
@@ -19,9 +18,11 @@ export default function Home() {
   };
   return (
     <>
-      <div style={{ backgroundColor: "#ffffff" }}>
-        <div className="w-[88.056%] m-[auto] pt-[37px]">
-          <NavBar />
+      <div className="bg-white">
+        <div className="bg-[#18202A] ">
+          <div className="w-[88.056%] m-[auto] pt-[37px]">
+            <NavBar colorNav="#FFFFFF" navImage={svgs.buildersWhite} />
+          </div>
         </div>
         <div>
           <BuyProperty />
@@ -35,34 +36,6 @@ export default function Home() {
         <section className="bg-[#F1F1F1] p-[6%]">
           <PropertyExperts />
         </section>
-        {/* <div className="slider-container w-[1000px]">
-          <Carousel settings={carouselSettings}>
-            <div className="bg-[red] mr-[30px]">
-              <h3>Slide 1</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 2</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-            <div className="bg-[red]  mr-[30px]">
-              <h3>Slide 3</h3>
-            </div>
-          </Carousel>
-        </div> */}
       </div>
     </>
   );

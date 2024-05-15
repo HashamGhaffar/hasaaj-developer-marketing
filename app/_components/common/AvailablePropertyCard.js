@@ -9,11 +9,9 @@ export default function AvailablePropertyCard({ typography, bgimg }) {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="flex justify-center items-start sm:items-center m-auto rounded-[17px] w-auto sm:w-[364px] h-[237.57px]"
+        className="flex justify-center items-center m-auto rounded-[17px] w-auto sm:w-[364px] h-[237.57px]"
       >
-        <h2 className="text-[23px] sm:text-[31px] mt-[20px] sm:mt-0 font-bold">
-          {typography}
-        </h2>
+        <h2 className="text-[23px] sm:text-[31px] font-bold">{typography}</h2>
       </div>
     </>
   );
