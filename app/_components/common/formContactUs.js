@@ -12,8 +12,8 @@ export default function FormContactUs() {
   return (
     <>
       <div className="w-full lg:w-[55%] xl:w-[64%]">
-        <div className="flex flex-col gap-y-12">
-          <div className="flex flex-col sm:flex-row gap-x-[6%]">
+        <div className="flex flex-col">
+          <div className="flex flex-col sm:flex-row gap-x-[10px]">
             <InputElement
               lable="First Name"
               inputType={text}
@@ -28,7 +28,7 @@ export default function FormContactUs() {
               placeHolderText="Doe"
             />
           </div>
-          <div className="flex flex-col sm:flex-row gap-x-[6%]">
+          <div className="flex flex-col sm:flex-row gap-x-[10px]">
             <InputElement
               lable="Email"
               inputType={text}

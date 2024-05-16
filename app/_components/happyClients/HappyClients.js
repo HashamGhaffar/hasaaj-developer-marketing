@@ -15,14 +15,15 @@ export default function HappyClients() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    dots: true,
     responsive: [
       {
         breakpoint: 1300,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
-          // dots: true,
+          dots: true,
         },
       },
       {
@@ -31,7 +32,7 @@ export default function HappyClients() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          // dots: true,
+          dots: true,
         },
       },
       {
@@ -40,6 +41,7 @@ export default function HappyClients() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: true,
         },
       },
       {
@@ -47,6 +49,7 @@ export default function HappyClients() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
@@ -70,7 +73,7 @@ export default function HappyClients() {
           <div className="mb-[10px]">
             <Hedding hedding="Our Happy Clients" span="" />
           </div>
-          <p className="text-[#000000] font-normal	text-[23.5px] w-[48%]	m-[auto] leading-[28px]	">
+          <p className="text-[#000000] font-normal sm:text-[18px] lg:text-[23.5px] sm:w-[70%] lg:w-[45%]	m-[auto] leading-[20px] sm:leading-[28px]	">
             we always take care of our client and they are very happy.We have
             collected a few stories for you.
           </p>
@@ -92,7 +95,7 @@ export default function HappyClients() {
               />
             </Carousel>
             <div
-              className="bg-[#ffffff] h-[43px] w-[43px] rounded-[50%] absolute top-[39%] right-0 sm:right-[-21px] lg:right-[6px]"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[39%] sm:right-[-21px] right-[-21px] lg:right-[-10px]"
               onClick={nextSlide}
             >
               <Image
@@ -100,11 +103,11 @@ export default function HappyClients() {
                 alt="RightArrow"
                 height={24}
                 width={24}
-                className="mt-[13px] ml-[10px]"
+                className="h-[20px] w-[20px] mt-[5px] sm:mt-[13px] ml-[5px] sm:ml-[10px]"
               />
             </div>
             <div
-              className="bg-[#ffffff] h-[43px] w-[43px] rounded-[50%] absolute top-[39%] sm:left-[-40px] lg:left-[-26px]	"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[39%] sm:left-[-40px] left-[-38px]	"
               onClick={prevSlide}
             >
               <Image
@@ -112,15 +115,15 @@ export default function HappyClients() {
                 alt="LeftArrow"
                 height={24}
                 width={24}
-                className="mt-[13px] ml-[10px]"
+                className="h-[20px] w-[20px] mt-[5px] sm:mt-[13px] ml-[4px] sm:ml-[10px]"
               />
             </div>
           </div>
-          <div className="flex justify-center gap-[6px] py-[50px]">
+          {/* <div className="flex justify-center gap-[6px] py-[50px]">
             <div className="h-[13px] w-[13px] rounded-[50%] bg-[#D9D9D9]"></div>
             <div className="h-[13px] w-[13px] rounded-[50%] bg-[#FF9D00]"></div>
             <div className="h-[13px] w-[13px] rounded-[50%] bg-[#D9D9D9]"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -26,6 +26,7 @@ export default function AvailableProperties() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots: true,
     responsive: [
       {
         breakpoint: 1300,
@@ -33,7 +34,7 @@ export default function AvailableProperties() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          // dots: true,
+          dots: true,
         },
       },
       {
@@ -42,7 +43,7 @@ export default function AvailableProperties() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          // dots: true,
+          dots: true,
         },
       },
       {
@@ -51,6 +52,7 @@ export default function AvailableProperties() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: true,
         },
       },
       {
@@ -58,6 +60,7 @@ export default function AvailableProperties() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
@@ -102,7 +105,7 @@ export default function AvailableProperties() {
               />
             </Carousel>
             <div
-              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[44%] sm:top-[39%] right-[5px]"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[50%] translate-y-[-50%] right-[-15px] xl:right-[2px]"
               onClick={nextSlide}
             >
               <Image
@@ -114,7 +117,7 @@ export default function AvailableProperties() {
               />
             </div>
             <div
-              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[44%] sm:top-[39%] left-[-10px]	"
+              className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[50%] translate-y-[-50%] left-[-30px] md:left-[-35px] lg:left-[-31px] xl:left-[-16px]	"
               onClick={prevSlide}
             >
               <Image
@@ -127,10 +130,10 @@ export default function AvailableProperties() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center gap-[6px] mt-[30px]">
+        {/* <div className="flex justify-center gap-[6px] mt-[30px]">
           <div className="h-[13px] w-[13px] rounded-[50%] bg-[#FF9D00]"></div>
           <div className="h-[13px] w-[13px] rounded-[50%] bg-[#D9D9D9]"></div>
-        </div>
+        </div> */}
       </section>
     </>
   );

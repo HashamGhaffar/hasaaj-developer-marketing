@@ -21,7 +21,11 @@ export default function Home() {
       <div className="bg-white">
         <div className="bg-[#18202A] ">
           <div className="w-[88.056%] m-[auto] pt-[37px]">
-            <NavBar colorNav="#FFFFFF" navImage={svgs.buildersWhite} />
+            <NavBar
+              colorNav="#FFFFFF"
+              navImage={svgs.buildersWhite}
+              navHamburger={svgs.hamburgerWhite}
+            />
           </div>
         </div>
         <div>
@@ -31,7 +35,7 @@ export default function Home() {
           <AvailableProperties />
         </section>
         <section className="bg-[#F1F1F1]">
-          <div className="w-[88.056%] m-[auto] pt-[75px] ">
+          <div className="w-[88.056%] m-[auto] py-[75px] ">
             <HappyClients />
           </div>
         </section>

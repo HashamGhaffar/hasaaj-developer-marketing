@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { svgs } from "@/app/_constants/assets";
 
-export default function NavBar({ colorNav, navImage }) {
+export default function NavBar({ colorNav, navImage, navHamburger }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -43,7 +43,7 @@ export default function NavBar({ colorNav, navImage }) {
         <Image
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="sm:hidden h-auto w-[40px] cursor-pointer"
-          src={svgs.hamburger}
+          src={navHamburger}
           width={40}
           height={40}
           alt="hamburger"

@@ -11,9 +11,13 @@ export default function ContactUs() {
       <div className="bg-white">
         <div className="w-[88.056%] m-[auto] pt-[37px] bg-white	">
           <div>
-            <NavBar colorNav="#18202A" navImage={svgs.builders} />
+            <NavBar
+              colorNav="#18202A"
+              navImage={svgs.builders}
+              navHamburger={svgs.hamburgerBlack}
+            />
           </div>
-          <div className="flex flex-col-reverse gap-y-10 gap-x-9 pt-[130px] pb-24 lg:flex-row items-center	 ">
+          <div className="flex flex-col-reverse gap-y-10 gap-x-9 pt-[130px] pb-24 md:flex-row items-center	 ">
             <ContactInformation />
             <FormContactUs />
           </div>

@@ -11,7 +11,7 @@ export default function InputElement({
 }) {
   return (
     <>
-      <div style={{ width: width }} className="flex flex-col">
+      <div style={{ width: width }} className="flex flex-col mb-4 md:mb-0">
         <label
           for="fname"
           style={{ color: lableTextColor }}
