@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import Image from "next/image";
 
@@ -17,9 +19,8 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
           alt="Picture of the author"
         />
         <ul
-          className={` w-[65%] bg-[#2b4463] sm:bg-transparent rounded-[20px] p-[20px] sm:p-0  sm:w-auto absolute top-[130px] left-[50%] translate-x-[-50%] sm:translate-x-[0] gap-y-[16px] sm:static sm:flex items-center gap-x-[14px] xl:gap-x-[85px] lg:gap-x-[65px] md:gap-x-[16px] lg:text-[22px] md:text-[18px] sm:text-[15px] text-[15px] flex-col  justify-center sm:flex-row sm:flex-wrap ${
-            isMenuOpen ? "flex" : "hidden 	"
-          }`}
+          className={` " z-30 text-white sm:text-black w-[65%] bg-[#2b4463] sm:bg-transparent rounded-[20px] p-[20px] sm:p-0  sm:w-auto absolute top-[130px] left-[50%] translate-x-[-50%] sm:translate-x-[0] gap-y-[16px] sm:static sm:flex items-center gap-x-[14px] xl:gap-x-[85px] lg:gap-x-[65px] md:gap-x-[16px] lg:text-[22px] md:text-[18px] sm:text-[15px] text-[15px] flex-col  justify-center sm:flex-row sm:flex-wrap ${isMenuOpen ? "flex" : "hidden 	"
+            }`}
         >
           <li style={{ color: colorNav }} className="font-semibold">
             Home

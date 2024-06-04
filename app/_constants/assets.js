@@ -12,6 +12,7 @@ export const pngs = {
   robertMartin: "/png/RobertMartin.png",
   vector: "/png/vector2.png",
   group: "/png/Group.png",
+  AboutUs_img: "/png/about_img.png",
 };
 
 export const svgs = {
@@ -26,4 +27,13 @@ export const svgs = {
   phone: "/svg/phone.svg",
   message: "/svg/message.svg",
   location: "/svg/location.svg",
+  adress: " /svg/adress-logo.svg",
+  emailIcon: "/svg/email-icon.svg",
+  telIcon: "/svg/Tel-icon.svg",
+  instagram: "/svg/instagram-icon.svg",
+  twitter: "/svg/twitter icon.svg",
+  facebook: "/svg/fb-icon.svg",
+  couple: "/svg/men-women.svg",
+  homeFront: "/svg/home-front.svg",
+
 };
