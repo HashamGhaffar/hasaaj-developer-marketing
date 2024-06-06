@@ -13,6 +13,12 @@ export const pngs = {
   vector: "/png/vector2.png",
   group: "/png/Group.png",
   AboutUs_img: "/png/about_img.png",
+  bgTools: "/png.bgTools.png",
+  sixthCard: "/png/bgSixthCard.png",
+  renovation: "/png/bgRenovation.png",
+  infrastructure: "/png/bgInfrastructure.png",
+  commercial: "/png/bgCommercial.png",
+  tools: "/png/bgTools.png",
 };
 
 export const svgs = {
@@ -37,5 +43,14 @@ export const svgs = {
   homeFront: "/svg/home-front.svg",
   blog_2: "/svg/blog-2.svg",
   blog_3: "/svg/blog-3.svg",
+  couple2: "/svg/Couple.svg",
+  residentialCase: "/svg/residential-image.svg",
+  residentBuilding: "/svg/resident-building.svg",
+  commercial: "/svg/commercial-icon.svg",
+  infrastructure: "/svg/infrastructure-icon.svg",
+  tools: "/svg/Tools-icon.svg",
+  renovation: "/svg/renovation-icon.svg",
+  sixthCard: "/svg/sixthcard-icon.svg",
+
 
 };
