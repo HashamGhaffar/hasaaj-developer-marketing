@@ -4,6 +4,7 @@ import NavBar from "../_components/common/navbar";
 import ContactInformation from "../_components/common/contactInformation";
 import FormContactUs from "../_components/common/formContactUs";
 import { svgs } from "@/app/_constants/assets";
+import Footer from "../_components/footer";
 
 export default function ContactUs() {
   return (
@@ -23,6 +24,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

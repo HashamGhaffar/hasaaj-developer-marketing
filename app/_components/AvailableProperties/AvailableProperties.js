@@ -20,6 +20,7 @@ export default function AvailableProperties() {
       sliderRef.current.slickPrev();
     }
   };
+
   const carouselSettings = {
     infinite: true,
     arrows: false,
@@ -89,20 +90,28 @@ export default function AvailableProperties() {
           <Hedding hedding="Properties Available in" span="Lahore" />
         </div>
         <div>
-          <div className="slider-container relative space-x-4 sm:space-x-6">
+          <div className="slider-container relative space-x-4 sm:space-x-6 mb-8 md:mb-0">
             <Carousel sliderRef={sliderRef} settings={carouselSettings}>
-              <AvailablePropertyCard
-                typography="Houses for Rent"
-                bgimg={pngs.availableProperty1}
-              />
+              <div className="px-5 sm:px-10 md:px-0">
+                <AvailablePropertyCard
+                  typography="Houses for Rent"
+                  bgimg={pngs.availableProperty1}
+                />
+              </div>
+              <div className="px-5 sm:px-10 md:px-0">
+
               <AvailablePropertyCard
                 typography="Houses for Sale"
                 bgimg={pngs.availableProperty2}
-              />
+                />
+                </div>
+                <div className="px-5 sm:px-10 md:px-0">
+
               <AvailablePropertyCard
                 typography="Plot For Sale"
                 bgimg={pngs.availableProperty3}
-              />
+                />
+                </div>
             </Carousel>
             <div
               className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[50%] translate-y-[-50%] right-[-15px] xl:right-[2px]"

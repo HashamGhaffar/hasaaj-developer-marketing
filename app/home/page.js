@@ -7,8 +7,9 @@ import HappyClients from "../_components/happyClients/HappyClients";
 import PropertyExperts from "../_components/propertyExperts/propertyExperts";
 import BuyProperty from "../_components/buyProperty/BuyProperty";
 import { svgs } from "@/app/_constants/assets";
+import Footer from "../_components/footer";
 
-export default function Home() {
+export default function HomePage() {
   const carouselSettings = {
     dots: true,
     infinite: true,
@@ -43,6 +44,7 @@ export default function Home() {
           <PropertyExperts />
         </section>
       </div>
+      <Footer />
     </>
   );
 }

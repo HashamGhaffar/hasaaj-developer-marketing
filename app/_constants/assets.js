@@ -35,5 +35,7 @@ export const svgs = {
   facebook: "/svg/fb-icon.svg",
   couple: "/svg/men-women.svg",
   homeFront: "/svg/home-front.svg",
+  blog_2: "/svg/blog-2.svg",
+  blog_3: "/svg/blog-3.svg",
 
 };

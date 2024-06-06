@@ -6,7 +6,7 @@ import { svgs } from "@/app/_constants/assets";
 export default function ClientsCard({ Name, Job, photo, comments }) {
   return (
     <>
-      <div className="w-full lg:w-[97%] rounded-[26px] lg:ml-[2px] py-[70px] px-[38px] bg-[#18202A] ">
+      <div className="w-full lg:w-[97%] rounded-[26px] lg:ml-[2px] py-[70px] px-[20px] bg-[#18202A] text-white">
         <div className="flex justify-between  flex-col xl:flex-row gap-y-[15px] pb-[28px]">
           <div className="flex items-center gap-[17px]">
             <Image

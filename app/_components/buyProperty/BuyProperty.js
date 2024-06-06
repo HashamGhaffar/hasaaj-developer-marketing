@@ -24,7 +24,7 @@ export default function BuyProperty() {
         </p>
         <hr className="sm:mb-2 mb-2 sm:hidden block" />
         <div className="xl:my-4 xl:mx-28 lg:my-4 lg:mx-28 md:w-4/12 md:my-4 md:mx-28 sm:w-3/6 sm:m-auto w-3/6 m-auto ">
-          <button className="lg:text-[18px] md:text-[16px] text-[14px] font-bold border-[1px] border-white p-2 rounded-lg">
+          <button className="lg:text-[18px] md:text-[16px] text-[14px] font-bold border-[1px] border-white p-2 rounded-lg text-white">
             Book Now
           </button>
         </div>
