@@ -51,6 +51,5 @@ export const svgs = {
   tools: "/svg/Tools-icon.svg",
   renovation: "/svg/renovation-icon.svg",
   sixthCard: "/svg/sixthcard-icon.svg",
-
-
+  servicesArrow: "/svg/servicesArrow.svg",
 };
