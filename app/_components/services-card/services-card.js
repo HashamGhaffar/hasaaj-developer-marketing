@@ -4,7 +4,7 @@ import Image from 'next/image'
 const ServicesCard = ({ backgroundImage, icon, title, description }) => {
   return (
     <div className=' inline-flex flex-col max-w-[364px]'>
-      <div className=' max-sm:w-[85%] max-sm:m-auto min-h-64 h-full sm:h-64 w-full  flex flex-col gap-10 rounded-tr-xl rounded-tl-xl before:rounded-tr-xl relative before:rounded-tl-xl before:bg-black before:opacity-30 before:absolute before:z-10 before:w-full before:h-full' style={{ background: `url(${backgroundImage.src})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+      <div className=' max-sm:w-[85%] max-sm:m-auto min-h-64 h-full sm:h-64 w-full  flex flex-col gap-10 rounded-tr-xl rounded-tl-xl before:rounded-tr-xl relative before:rounded-tl-xl before:bg-black before:opacity-50 before:absolute before:z-10 before:w-full before:h-full' style={{ background: `url(${backgroundImage.src})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
         <div className=' relative z-20'>
           <div className='min-h-64 h-full sm:h-64 pb-5'>
             <div className='pl-6 pt-6'>
@@ -31,3 +31,4 @@ const ServicesCard = ({ backgroundImage, icon, title, description }) => {
 }
 
 export default ServicesCard;
+

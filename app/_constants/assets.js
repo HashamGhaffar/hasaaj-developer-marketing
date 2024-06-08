@@ -19,6 +19,10 @@ export const pngs = {
   infrastructure: "/png/bgInfrastructure.png",
   commercial: "/png/bgCommercial.png",
   tools: "/png/bgTools.png",
+  construction: "/png/bgConstruction.png",
+  kitchen: "/png/bgKitcen.png",
+  heart: "/png/heart.png",
+  plus: "/png/plus-icon.png",
 };
 
 export const svgs = {
@@ -51,6 +55,19 @@ export const svgs = {
   tools: "/svg/Tools-icon.svg",
   renovation: "/svg/renovation-icon.svg",
   sixthCard: "/svg/sixthcard-icon.svg",
+  handSign: "/svg/handsign-icon.svg",
+  circleHome: "/svg/home-circle-icon.svg",
+  threeHome: "/svg/three-home-icon.svg",
+  cross: "/svg/cross-icon.svg",
+  house: "/svg/big-house.svg",
+  room: "/svg/sofa-room.svg",
+  doubleArrow: "/svg/double-sided-arrow-icon.svg",
+  bed: "/svg/bed-icon.svg",
+  bathTub: "/svg/bath-tub-icon.svg",
+  goldenSquare: "/svg/golden-sqaure.svg",
+  kitchen: "/svg/kitchen.svg",
+
+
 
 
 };
