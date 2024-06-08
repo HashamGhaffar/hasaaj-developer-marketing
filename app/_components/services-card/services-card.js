@@ -1,7 +1,11 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const ServicesCard = ({ backgroundImage, icon, title, description }) => {
+  const router = useRouter()
   return (
     <div className=' inline-flex flex-col max-w-[364px]'>
       <div className=' max-sm:w-[85%] max-sm:m-auto min-h-64 h-full sm:h-64 w-full  flex flex-col gap-10 rounded-tr-xl rounded-tl-xl before:rounded-tr-xl relative before:rounded-tl-xl before:bg-black before:opacity-50 before:absolute before:z-10 before:w-full before:h-full' style={{ background: `url(${backgroundImage.src})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
@@ -14,7 +18,7 @@ const ServicesCard = ({ backgroundImage, icon, title, description }) => {
               {title}
             </h1>
             <div className='w-3/6 text-xs font-normal pl-6 pt-4'>
-              <button className='text-white p-[10px] border border-white rounded-md'>
+              <button className='text-white p-[10px] border border-white rounded-md' onClick={()=> router.push("/residential-construction")}>
                 Read more
               </button>
             </div>

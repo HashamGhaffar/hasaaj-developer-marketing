@@ -40,7 +40,7 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
             Home
           </li>
           <li
-            style={{ color: currentPath === "/blogs" ? "#FF9D00" : colorNav }}
+            style={{ color: currentPath === "/blogs" || currentPath === "/blog-details" ? "#FF9D00" : colorNav }}
             className="font-semibold cursor-pointer hover:!text-[#FF9D00]"
             onClick={() => router.push("/blogs")}
           >
@@ -63,7 +63,7 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
               />
             </div>
             <ul className="absolute hidden group-hover:block text-[16px] w-[173px] rounded-[10px] bg-[#1e3551] text-[#FF9D00] py-2 px-3">
-              <li className="py-1" onClick={() => router.push("/construction")}>
+              <li className="py-1" onClick={() => router.push("/construction-services")}>
                 Construction
               </li>
               <li
