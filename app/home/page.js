@@ -8,7 +8,6 @@ import PropertyExperts from "../_components/propertyExperts/propertyExperts";
 import BuyProperty from "../_components/buyProperty/BuyProperty";
 import { svgs } from "@/app/_constants/assets";
 import Footer from "../_components/footer";
-import Modal from "../_components/Modal/onclick-modal";
 
 export default function HomePage() {
   const carouselSettings = {
