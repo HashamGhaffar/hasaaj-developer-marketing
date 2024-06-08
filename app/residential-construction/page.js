@@ -1,13 +1,16 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
 import { pngs, svgs } from "../_constants/assets";
 import NavBar from "../_components/common/navbar";
 import Footer from "../_components/footer";
 import ResidentialCard from '../_components/residential-card/residential-card';
+import { useRouter } from 'next/navigation';
 
 
 export default function Residential() {
-
+  const router = useRouter()
   const ResidentialCardData = [
     {
       icon: svgs.threeHome,
@@ -52,7 +55,7 @@ export default function Residential() {
               </p>
 
               <div>
-                <button className='lg:text-lg lg:font-bold md:text-x border md:font-medium border-white rounded-lg p-[12px] relative hover:bg-[#FF9D00] '>
+                <button className='lg:text-lg lg:font-bold md:text-x border md:font-medium border-white rounded-lg p-[12px] relative hover:bg-[#FF9D00] '   onClick={() => router.push("/contact-us")}>
                   Contact Us
                 </button>
               </div>
