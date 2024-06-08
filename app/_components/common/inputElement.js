@@ -15,14 +15,13 @@ export default function InputElement({
         <label
           for="fname"
           style={{ color: lableTextColor }}
-          className="font-medium"
+          className="font-medium mb-2"
         >
           {lable}
         </label>
         <input
           type={inputType}
           placeholder={placeHolderText}
-          value={valueText}
           className="border-b-2 text-[#8D8D8D] w-full border-[#8D8D8D pb-[8px] outline-none"
           id="fname"
         />
