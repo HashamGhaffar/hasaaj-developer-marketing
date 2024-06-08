@@ -72,12 +72,7 @@ const PropertyCard = ({
           className="bg-[#ffffff] cursor-pointer h-[30px] sm:h-[31px] w-[30px] sm:w-[31px] rounded-[50%] absolute top-[50%] translate-y-[-50%] left-[-16px]	flex justify-center items-center"
           onClick={prevSlide}
         >
-          <Image
-            src={svgs.LeftArrow}
-            alt="RightArrow"
-            height={14}
-            width={14}
-          />
+          <Image src={svgs.LeftArrow} alt="RightArrow" height={14} width={14} />
         </div>
       </div>
       <div className="mx-[17px]">
@@ -113,7 +108,6 @@ const PropertyCard = ({
           </div>
           <Image
             src={svgs.arrowDiagnol}
-            className="absolute bottom-[20px] right-[20px]"
             width={13}
             height={13}
             alt="Arrow icon"
@@ -123,6 +117,7 @@ const PropertyCard = ({
             className="font-normal text-[13.5px] text-[#4E4E4E]"
           >
             {area}
+            <span className="ml-[6px]">Marla</span>
           </p>
         </div>
         <p className="font-normal mt-[7px] text-[13px] text-[#4E4E4E]">
