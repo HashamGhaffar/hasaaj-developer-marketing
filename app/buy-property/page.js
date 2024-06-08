@@ -3,6 +3,7 @@ import Image from "next/image";
 import NavBar from "../_components/common/navbar";
 import Dropdown from "../_components/common/Dropdown";
 import PropertyCard from "../_components/common/propertyCard";
+import Footer from "../_components/footer";
 import { svgs } from "@/app/_constants/assets";
 import { pngs } from "@/app/_constants/assets";
 export default function SellingAndPurchasing() {
@@ -78,13 +79,13 @@ export default function SellingAndPurchasing() {
         pngs.Residential6,
       ],
       heartIcon: svgs.HeartBorder,
-      service: "Apartment",
-      pricePKR: "1.2 crore",
+      service: "House",
+      pricePKR: "1 crore",
       bedNumber: "4",
       showerNumber: "4",
       area: "5",
-      location: "Gulberg, Lahore",
-      addedTime: "Added 1 day ago",
+      location: "Johar Town, Lahore",
+      addedTime: "Added 2 hours ago",
     },
     {
       bgImg: [
@@ -96,67 +97,67 @@ export default function SellingAndPurchasing() {
         pngs.Residential6,
       ],
       heartIcon: svgs.HeartBorder,
-      service: "Villa",
-      pricePKR: "2.5 crore",
-      bedNumber: "6",
-      showerNumber: "5",
+      service: "House",
+      pricePKR: "2 crore",
+      bedNumber: "9",
+      showerNumber: "8",
       area: "10",
-      location: "DHA, Lahore",
-      addedTime: "Added 3 days ago",
-    },
-    {
-      bgImg: [
-        pngs.Residential4,
-        pngs.Residential1,
-        pngs.Residential2,
-        pngs.Residential3,
-        pngs.Residential5,
-        pngs.Residential6,
-      ],
-      heartIcon: svgs.HeartBorder,
-      service: "Studio",
-      pricePKR: "50 lac",
-      bedNumber: "1",
-      showerNumber: "1",
-      area: "2",
       location: "Bahria Town, Lahore",
-      addedTime: "Added 5 hours ago",
+      addedTime: "Added 2 hours ago",
     },
     {
       bgImg: [
-        pngs.Residential5,
+        pngs.Residential4,
         pngs.Residential1,
         pngs.Residential2,
         pngs.Residential3,
-        pngs.Residential4,
-        pngs.Residential6,
-      ],
-      heartIcon: svgs.HeartBorder,
-      service: "Penthouse",
-      pricePKR: "3 crore",
-      bedNumber: "5",
-      showerNumber: "6",
-      area: "8",
-      location: "Cantt, Lahore",
-      addedTime: "Added 1 week ago",
-    },
-    {
-      bgImg: [
-        pngs.Residential6,
-        pngs.Residential1,
-        pngs.Residential2,
-        pngs.Residential3,
-        pngs.Residential4,
         pngs.Residential5,
+        pngs.Residential6,
       ],
       heartIcon: svgs.HeartBorder,
-      service: "Cottage",
-      pricePKR: "1 crore",
+      service: "House",
+      pricePKR: "60 lac",
       bedNumber: "3",
       showerNumber: "3",
-      area: "4",
-      location: "Model Town, Lahore",
-      addedTime: "Added 3 days ago",
+      area: "3",
+      location: "Alfalah Town, Lahore",
+      addedTime: "Added 2 hours ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential5,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "House",
+      pricePKR: "3 crore",
+      bedNumber: "4",
+      showerNumber: "4",
+      area: "5",
+      location: "Johar Town, Lahore",
+      addedTime: "Added 2 hours ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential6,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential5,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "House",
+      pricePKR: "50 Lac",
+      bedNumber: "9",
+      showerNumber: "8",
+      area: "10",
+      location: "Bahria Town, Lahore",
+      addedTime: "Added 2 hours ago",
     },
   ];
 
@@ -198,7 +199,7 @@ export default function SellingAndPurchasing() {
                 );
               })}
             </div>
-            <div className="w-[145px] p-3 cursor-pointer rounded-[7px] relative group text-[#ffffff] bg-[#FF9D00]">
+            <div className="w-[145px] z-10 p-3 cursor-pointer rounded-[7px] relative group text-[#ffffff] bg-[#FF9D00]">
               <div className="flex justify-between items-center">
                 <div className=" transform hover:rotate-180">
                   <Image
@@ -219,7 +220,7 @@ export default function SellingAndPurchasing() {
             </div>
           </div>
           {/* parent of all  */}
-          <div className="mt-[50px] w-full flex gap-5 flex-wrap justify-between">
+          <div className="flex gap-5 flex-wrap justify-between mt-[50px] w-full mb-[134px]">
             {properties.map((property, index) => (
               <PropertyCard
                 key={index}
@@ -236,6 +237,7 @@ export default function SellingAndPurchasing() {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
