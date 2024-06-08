@@ -17,7 +17,10 @@ export default function Button({
           backgroundColor: bgcolor,
           padding: padding,
           borderRadius: radius,
-          fontSize: fontSize,
+          fontSize: {
+            sm: "16px",
+            lg: "23px",
+          },
           fontWeight: fontWeight,
         }}
       >

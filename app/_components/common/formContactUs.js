@@ -12,8 +12,8 @@ export default function FormContactUs() {
   return (
     <>
       <div className="w-full lg:w-[55%] xl:w-[64%]">
-        <div className="flex flex-col">
-          <div className="flex flex-col sm:flex-row gap-x-[10px]">
+        <div className="flex flex-col gap-y-[25px] sm:gap-y-[70px]">
+          <div className="flex flex-col gap-y-[25px] sm:flex-row gap-x-[35px] md:gap-x-[15px] lg:gap-x-[40px]">
             <InputElement
               lable="First Name"
               inputType={text}
@@ -24,24 +24,24 @@ export default function FormContactUs() {
               lable="Last Name"
               inputType={text}
               width="100%"
-              lableTextColor="#000000"
+              lableTextColor="#8D8D8D"
               placeHolderText="Doe"
             />
           </div>
-          <div className="flex flex-col sm:flex-row gap-x-[10px]">
+          <div className="flex flex-col sm:flex-row gap-y-[25px] gap-x-[35px] md:gap-x-[15px] lg:gap-x-[40px]">
             <InputElement
               lable="Email"
               inputType={text}
               width="100%"
               lableTextColor="#8D8D8D"
             />
-            <div style={{ color: "black" }} className="text-black w-full">
+            <div className="w-full">
               <InputElement
                 lable="Phone Number"
                 inputType={text}
                 width="100%"
-                lableTextColor="#011C2A"
-                valueText="+1 012 3456 789"
+                lableTextColor="#8D8D8D"
+                placeHolderText="+1 012 3456 789"
               />
             </div>
           </div>
