@@ -45,6 +45,7 @@ export default function HomePage() {
         </section>
       </div>
       <Footer />
+      {/* <Modal /> */}
     </>
   );
 }

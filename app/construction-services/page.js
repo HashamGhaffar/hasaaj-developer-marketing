@@ -70,7 +70,7 @@ const ConstructionServices = () => {
         <div className=' max-sm:w-[90%] m-auto'>
 
           <div className='w-3/6'>
-            <h1 className="md:text-[40px] font-bold md:leading-6 text-3xl">
+            <h1 className="md:text-[40px] font-bold md:leading-10 text-3xl ">
               Construction Services
             </h1>
           </div>

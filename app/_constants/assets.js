@@ -30,6 +30,10 @@ export const pngs = {
   Residential4: "/png/Residential4.png",
   Residential5: "/png/Residential5.png",
   Residential6: "/png/Residential6.png",
+  construction: "/png/bgConstruction.png",
+  kitchen: "/png/bgKitcen.png",
+  heart: "/png/heart.png",
+  plus: "/png/plus-icon.png",
 };
 
 export const svgs = {
@@ -71,4 +75,19 @@ export const svgs = {
   arrowDiagnol: "/svg/arrowDiagnol.svg",
   bathTub: "/svg/bathTub.svg",
   Heart: "/svg/Heart.svg",
+  handSign: "/svg/handsign-icon.svg",
+  circleHome: "/svg/home-circle-icon.svg",
+  threeHome: "/svg/three-home-icon.svg",
+  cross: "/svg/cross-icon.svg",
+  house: "/svg/big-house.svg",
+  room: "/svg/sofa-room.svg",
+  doubleArrow: "/svg/double-sided-arrow-icon.svg",
+  bed: "/svg/bed-icon.svg",
+  bathTub: "/svg/bath-tub-icon.svg",
+  goldenSquare: "/svg/golden-sqaure.svg",
+  kitchen: "/svg/kitchen.svg",
+
+
+
+
 };
