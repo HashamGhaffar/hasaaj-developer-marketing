@@ -49,6 +49,117 @@ export default function SellingAndPurchasing() {
     },
   ];
 
+  const properties = [
+    {
+      bgImg: [
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential5,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "House",
+      pricePKR: "90 lac",
+      bedNumber: "3",
+      showerNumber: "3",
+      area: "3",
+      location: "Alfalah Town, Lahore",
+      addedTime: "Added 2 hours ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential2,
+        pngs.Residential1,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential5,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "Apartment",
+      pricePKR: "1.2 crore",
+      bedNumber: "4",
+      showerNumber: "4",
+      area: "5",
+      location: "Gulberg, Lahore",
+      addedTime: "Added 1 day ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential3,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential4,
+        pngs.Residential5,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "Villa",
+      pricePKR: "2.5 crore",
+      bedNumber: "6",
+      showerNumber: "5",
+      area: "10",
+      location: "DHA, Lahore",
+      addedTime: "Added 3 days ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential4,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential5,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "Studio",
+      pricePKR: "50 lac",
+      bedNumber: "1",
+      showerNumber: "1",
+      area: "2",
+      location: "Bahria Town, Lahore",
+      addedTime: "Added 5 hours ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential5,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential6,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "Penthouse",
+      pricePKR: "3 crore",
+      bedNumber: "5",
+      showerNumber: "6",
+      area: "8",
+      location: "Cantt, Lahore",
+      addedTime: "Added 1 week ago",
+    },
+    {
+      bgImg: [
+        pngs.Residential6,
+        pngs.Residential1,
+        pngs.Residential2,
+        pngs.Residential3,
+        pngs.Residential4,
+        pngs.Residential5,
+      ],
+      heartIcon: svgs.HeartBorder,
+      service: "Cottage",
+      pricePKR: "1 crore",
+      bedNumber: "3",
+      showerNumber: "3",
+      area: "4",
+      location: "Model Town, Lahore",
+      addedTime: "Added 3 days ago",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -108,18 +219,21 @@ export default function SellingAndPurchasing() {
             </div>
           </div>
           {/* parent of all  */}
-          <div className="mt-[50px] w-full h-[700px]">
-            <PropertyCard
-              bgImg={pngs.Residential1}
-              heartIcon={svgs.HeartBorder}
-              service="House"
-              pricePKR="90 lac"
-              bedNumber="3"
-              showerNumber="3"
-              area="3"
-              location="Alfalah Town, Lahore"
-              addedTime="Added 2 hours ago"
-            />
+          <div className="mt-[50px] w-full flex gap-5 flex-wrap justify-between">
+            {properties.map((property, index) => (
+              <PropertyCard
+                key={index}
+                bgImg={property.bgImg}
+                heartIcon={property.heartIcon}
+                service={property.service}
+                pricePKR={property.pricePKR}
+                bedNumber={property.bedNumber}
+                showerNumber={property.showerNumber}
+                area={property.area}
+                location={property.location}
+                addedTime={property.addedTime}
+              />
+            ))}
           </div>
         </div>
       </div>

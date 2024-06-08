@@ -34,9 +34,9 @@ const PropertyCard = ({
     infinite: true,
     arrows: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true,
+    dots: false,
   };
 
   return (
@@ -44,82 +44,44 @@ const PropertyCard = ({
       style={{ boxShadow: "0px 0px 4px 0px #00000040" }}
       className="w-[364px] rounded-[10px] static z-0 h-[400px]"
     >
-      <Carousel
-        style={{
-          width: "100%",
-        }}
-        sliderRef={sliderRef}
-        settings={carouselSettings}
-      >
+      <div className="relative">
+        <Carousel sliderRef={sliderRef} settings={carouselSettings}>
+          {bgImg.map((image, index) => (
+            <div key={index} className="w-[364px] h-[259px]">
+              <Image
+                src={image}
+                alt={`Property Image ${index + 1}`}
+                className="w-full h-full"
+                fill
+              />
+            </div>
+          ))}
+        </Carousel>
         <div
-          style={{
-            // backgroundImage: `url(${bgImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundColor: "red",
-          }}
-          className=" h-[259px] relative w-[300px]"
+          className="bg-[#ffffff] cursor-pointer h-[30px] sm:h-[31px] w-[30px] sm:w-[31px] rounded-[50%] absolute top-[50%] translate-y-[-50%] right-[-15px] flex justify-center items-center"
+          onClick={nextSlide}
         >
-          6rrftguyhjimlk
           <Image
-            src={heartIcon}
-            className="absolute bottom-[20px] right-[20px]"
-            width={22}
-            height={20}
-            alt="Heart Border"
+            src={svgs.rightArrow}
+            alt="RightArrow"
+            height={14}
+            width={14}
           />
         </div>
         <div
-          style={{
-            backgroundImage: `url(${bgImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-          className="w-full h-[259px] relative"
+          className="bg-[#ffffff] cursor-pointer h-[30px] sm:h-[31px] w-[30px] sm:w-[31px] rounded-[50%] absolute top-[50%] translate-y-[-50%] left-[-16px]	flex justify-center items-center"
+          onClick={prevSlide}
         >
           <Image
-            src={heartIcon}
-            className="absolute bottom-[20px] right-[20px]"
-            width={22}
-            height={20}
-            alt="Heart Border"
+            src={svgs.LeftArrow}
+            alt="RightArrow"
+            height={14}
+            width={14}
           />
         </div>
-        <div
-          style={{
-            backgroundImage: `url(${bgImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-          className="w-full h-[259px] relative"
-        >
-          <Image
-            src={heartIcon}
-            className="absolute bottom-[20px] right-[20px]"
-            width={22}
-            height={20}
-            alt="Heart Border"
-          />
-        </div>
-        <div
-          style={{
-            backgroundImage: `url(${bgImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-          className="w-full h-[259px] relative"
-        >
-          <Image
-            src={heartIcon}
-            className="absolute bottom-[20px] right-[20px]"
-            width={22}
-            height={20}
-            alt="Heart Border"
-          />
-        </div>
-      </Carousel>
+      </div>
       <div className="mx-[17px]">
-        {/* first line for card  */}
+        {/* first line for card */}
         <div className="flex justify-between">
           <p
             style={{ wordSpacing: "1px" }}
@@ -135,7 +97,7 @@ const PropertyCard = ({
             <p>{service}</p>
           </div>
         </div>
-        {/* second line of card  */}
+        {/* second line of card */}
         <div className="flex gap-x-[17px] mt-[13px]">
           <div className="flex gap-x-[10px]">
             <Image src={svgs.bed} width={18} height={12} alt="Bed icon" />
@@ -171,7 +133,6 @@ const PropertyCard = ({
         </p>
       </div>
     </div>
-    // </Carousel>
   );
 };
 
