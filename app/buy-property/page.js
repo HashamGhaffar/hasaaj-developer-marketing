@@ -174,15 +174,15 @@ export default function SellingAndPurchasing() {
           </div>
           {/* Input */}
           <div className="flex justify-end mt-[100px]">
-            <div className="flex justify-between gap-3 sm:gap-6 w-full sm:w-[59%] py-[18px] sm:py-[27px] px-[18px] sm:px-[30px] lg:px-[3%] rounded-xl bg-[#F4F4F4]">
+            <div className="flex justify-between gap-3 sm:gap-6 w-full sm:w-[50%] py-[18px] sm:py-[27px] px-[18px] sm:px-[30px] lg:px-[3%] rounded-xl bg-[#F4F4F4]">
               <input
-                className="placeholder-black text text-[25px] font-normal w-[60%] outline-none bg-transparent"
-                placeholder="Lahore"
+                className="placeholder-black text text-[25px] font-normal w-[89%] outline-none bg-transparent"
+                placeholder="Search..."
                 type="text"
                 id="fname"
                 name="fname"
               />
-              <Image src={svgs.Cross} width={13} height={13} alt="Cross" />
+              {/* <Image src={svgs.Cross} width={13} height={13} alt="Cross" /> */}
               <Image src={svgs.Search} width={27} height={27} alt="Search" />
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function SellingAndPurchasing() {
                 );
               })}
             </div>
-            <div className="w-[145px] z-10 p-3 cursor-pointer rounded-[7px] relative group text-[#ffffff] bg-[#FF9D00]">
+            <div className="w-[145px] .flex-shrink-0 z-10 p-3 cursor-pointer rounded-[7px] relative group text-[#ffffff] bg-[#FF9D00]">
               <div className="flex justify-between items-center">
                 <div className=" transform hover:rotate-180">
                   <Image

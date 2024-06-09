@@ -42,12 +42,15 @@ const PropertyCard = ({
   return (
     <div
       style={{ boxShadow: "0px 0px 4px 0px #00000040" }}
-      className="w-[364px] rounded-[10px] static z-0 h-[400px]"
+      className="w-[250px] sm:w-[364px] rounded-[10px] static z-0 h-[400px]"
     >
       <div className="relative">
         <Carousel sliderRef={sliderRef} settings={carouselSettings}>
           {bgImg.map((image, index) => (
-            <div key={index} className="w-[364px] h-[259px]">
+            <div
+              key={index}
+              className="w-[250px] sm:w-[364px] h-auto sm:h-[259px]"
+            >
               <Image
                 src={image}
                 alt={`Property Image ${index + 1}`}
