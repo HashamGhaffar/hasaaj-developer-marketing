@@ -69,7 +69,7 @@ export default function AvailableProperties() {
   return (
     <>
       <section>
-        <div className="flex items-baseline flex-wrap md:flex-nowrap gap-y-[40px] sm:gap-x-[40px] lg:gap-x-[9%] pb-[80px]">
+        <div className="flex justify-center items-baseline flex-wrap gap-y-[40px] sm:gap-x-[40px] lg:gap-x-[6.2%] pb-[80px]">
           <FirstCard
             img={pngs.buyAndSell}
             hedding="Buy & Sell of Properties"
@@ -99,19 +99,17 @@ export default function AvailableProperties() {
                 />
               </div>
               <div className="px-5 sm:px-10 md:px-0">
-
-              <AvailablePropertyCard
-                typography="Houses for Sale"
-                bgimg={pngs.availableProperty2}
+                <AvailablePropertyCard
+                  typography="Houses for Sale"
+                  bgimg={pngs.availableProperty2}
                 />
-                </div>
-                <div className="px-5 sm:px-10 md:px-0">
-
-              <AvailablePropertyCard
-                typography="Plot For Sale"
-                bgimg={pngs.availableProperty3}
+              </div>
+              <div className="px-5 sm:px-10 md:px-0">
+                <AvailablePropertyCard
+                  typography="Plot For Sale"
+                  bgimg={pngs.availableProperty3}
                 />
-                </div>
+              </div>
             </Carousel>
             <div
               className="bg-[#ffffff] h-[30px] sm:h-[43px] w-[30px] sm:w-[43px] rounded-[50%] absolute top-[50%] translate-y-[-50%] right-[-15px] xl:right-[2px]"

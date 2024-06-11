@@ -18,7 +18,7 @@ export default function ContactUs() {
               navHamburger={svgs.hamburgerBlack}
             />
           </div>
-          <div className="flex flex-col-reverse gap-y-10 gap-x-9 pt-[130px] pb-24 md:flex-row items-end">
+          <div className="flex items-center flex-col-reverse gap-y-10 gap-x-[25px] lg:gap-x-[63px] pt-[130px] pb-24 md:flex-row">
             <ContactInformation />
             <FormContactUs />
           </div>

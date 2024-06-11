@@ -1,4 +1,9 @@
 "use client";
+// import "./";
+// import "./style.css";
+// import "../";
+// import "../styles/global.css";
+import "./style.css";
 import Image from "next/image";
 import NavBar from "../_components/common/navbar";
 import Property from "../_components/common/property";
@@ -18,11 +23,11 @@ export default function SellingAndPurchasing() {
               navHamburger={svgs.hamburgerBlack}
             />
           </div>
-          <div className="mt-6 sm:mt-12 md:mt-[150px]">
-            <h1 className="md:text-[40px] font-bold md:leading-6 text-3xl">
+          <div className="mt-12 md:mt-[150px]">
+            <h1 className="md:text-[40px] font-bold md:leading-6 text-[23px] sm:text-[30px]">
               Selling & Purchasing Services
             </h1>
-            <p className="mt-6 md:text-xl md:leading-6 font-normal mb-16 text-[14px] leading-5">
+            <p className="mt-0 sm:mt-6 mb-10 sm:mb-16 text-[14px] md:text-xl leading-6 font-normal sm:leading-5">
               Hassaj Developers and Marketing offers comprehensive real estate
               services to help you navigate the complexities of buying and
               selling properties. Our team of experienced professionals is
@@ -37,7 +42,7 @@ export default function SellingAndPurchasing() {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
               }}
-              className="flex relative flex-wrap items-center z-10 gap-y-[20px] gap-x-[15px] xl:gap-x-[26px] 2xl:gap-x-[40px] justify-center w-full h-[auto] py-[128px] rounded-[23px]"
+              className="bg-img flex flex-col lg:flex-row relative flex-wrap items-center z-10 gap-y-[20px] gap-x-[15px] xl:gap-x-[26px] 2xl:gap-x-[40px] justify-center w-full h-[auto] sm:py-[128px] rounded-[23px]"
             >
               <Property
                 imagePath={pngs.property1}
@@ -55,7 +60,7 @@ export default function SellingAndPurchasing() {
                 imagePath={pngs.property3}
                 heading="Rent a property"
                 typography="Invest smart, win big, irrespective of economic shifts."
-                button="Add Details"
+                button="Find Rentals"
               />
             </div>
             <Image

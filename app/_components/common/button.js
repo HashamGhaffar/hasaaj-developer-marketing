@@ -23,7 +23,7 @@ export default function Button({
           },
           fontWeight: fontWeight,
         }}
-      >
+        >
         {text}
       </button>
     </>

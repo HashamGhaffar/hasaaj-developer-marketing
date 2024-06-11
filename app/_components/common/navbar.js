@@ -28,7 +28,7 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
           />
         </div>
         <ul
-          className={`z-30 text-white sm:text-black w-[65%] bg-[#2b4463] sm:bg-transparent rounded-[20px] p-[20px] sm:p-0 sm:w-auto absolute top-[130px] left-[50%] translate-x-[-50%] sm:translate-x-[0] gap-y-[16px] sm:static sm:flex items-center gap-x-[14px] xl:gap-x-[85px] lg:gap-x-[65px] sm:gap-x-[35px] lg:text-[22px] md:text-[18px] sm:text-[15px] text-[15px] flex-col justify-center sm:flex-row sm:flex-wrap ${
+          className={`z-30 text-white sm:text-black w-[65%] bg-[#a5a5a5] sm:bg-transparent rounded-[20px] p-[20px] sm:p-0 sm:w-auto absolute top-[130px] left-[50%] translate-x-[-50%] sm:translate-x-[0] gap-y-[16px] sm:static sm:flex items-center gap-x-[14px] xl:gap-x-[85px] lg:gap-x-[65px] sm:gap-x-[30px] lg:text-[22px] md:text-[18px] sm:text-[15px] text-[15px] flex-col justify-center sm:flex-row sm:flex-wrap ${
             isMenuOpen ? "flex" : "hidden"
           }`}
         >
@@ -40,7 +40,12 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
             Home
           </li>
           <li
-            style={{ color: currentPath === "/blogs" || currentPath === "/blog-details" ? "#FF9D00" : colorNav }}
+            style={{
+              color:
+                currentPath === "/blogs" || currentPath === "/blog-details"
+                  ? "#FF9D00"
+                  : colorNav,
+            }}
             className="font-semibold cursor-pointer hover:!text-[#FF9D00]"
             onClick={() => router.push("/blogs")}
           >
@@ -62,12 +67,15 @@ export default function NavBar({ colorNav, navImage, navHamburger }) {
                 alt="Picture of the author"
               />
             </div>
-            <ul className="absolute hidden group-hover:block text-[16px] w-[173px] rounded-[10px] bg-[#1e3551] text-[#FF9D00] py-2 px-3">
-              <li className="py-1" onClick={() => router.push("/construction-services")}>
+            <ul className="absolute hidden group-hover:block text-[16px] w-[182px] rounded-[10px] bg-[#f1f1f1] text-black py-2 px-3">
+              <li
+                className="py-1 hover:!text-[#FF9D00]"
+                onClick={() => router.push("/construction-services")}
+              >
                 Construction
               </li>
               <li
-                className="py-1"
+                className="py-1 hover:!text-[#FF9D00]"
                 onClick={() => router.push("/selling-purchasing")}
               >
                 Selling & Purchasing

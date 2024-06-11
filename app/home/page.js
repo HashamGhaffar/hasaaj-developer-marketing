@@ -30,7 +30,7 @@ export default function HomePage() {
           </div>
         </div>
         <div>
-          <BuyProperty /> {/* section prepared by abdulla brother */}
+          <BuyProperty /> {/*this section is prepared by abdullah brother */}
         </div>
         <section className=" p-[6%]">
           <AvailableProperties />

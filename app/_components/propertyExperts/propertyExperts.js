@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Hedding from "../common/hedding";
 
 export default function PropertyExperts() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <div className="flex flex-col	justify-center items-center">
@@ -17,7 +17,10 @@ export default function PropertyExperts() {
             plans.
           </p>
         </div>
-        <button className=" text-[18px] w-[125px] p-[12px] mt-[60px] border-[1px] rounded-[8px] border-[#18202A] text-[#18202A] "   onClick={() => router.push("/contact-us")}>
+        <button
+          className=" text-[18px] w-[125px] p-[12px] mt-[60px] border-[1px] rounded-[8px] hover:border-[#FF9D00] border-[#18202A] hover:text-[#FF9D00] text-[#18202A] "
+          onClick={() => router.push("/contact-us")}
+        >
           Contact Us
         </button>
       </div>

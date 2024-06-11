@@ -12,8 +12,8 @@ export default function FormContactUs() {
   return (
     <>
       <div className="w-full lg:w-[55%] xl:w-[64%]">
-        <div className="flex flex-col gap-y-[25px] sm:gap-y-[70px]">
-          <div className="flex flex-col gap-y-[25px] sm:flex-row gap-x-[35px] md:gap-x-[15px] lg:gap-x-[40px]">
+        <div className="flex flex-col gap-y-[25px] sm:gap-y-[61px]">
+          <div className="flex flex-col gap-y-[30px] xl:gap-y-[52px] sm:flex-row gap-x-[35px] md:gap-x-[15px] lg:gap-x-[40px]">
             <InputElement
               lable="First Name"
               inputType={text}
