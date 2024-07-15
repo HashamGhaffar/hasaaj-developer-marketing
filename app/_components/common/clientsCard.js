@@ -53,7 +53,17 @@ export default function ClientsCard({ Name, Job, photo, comments }) {
             />
           </div>
         </div>
-        <p>{comments}</p>
+        <p
+          style={{
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 11,
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {comments}
+        </p>
       </div>
     </>
   );
