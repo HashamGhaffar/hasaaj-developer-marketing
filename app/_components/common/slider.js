@@ -7,7 +7,7 @@ const Carousel = ({ settings, children, sliderRef }) => {
   return (
     <>
       <div>
-        <Slider className="justify-center	" {...settings} ref={sliderRef}>
+        <Slider className="justify-center" {...settings} ref={sliderRef}>
           {children}
         </Slider>
       </div>
