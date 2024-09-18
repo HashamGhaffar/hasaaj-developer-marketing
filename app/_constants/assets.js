@@ -86,8 +86,4 @@ export const svgs = {
   bathTub: "/svg/bath-tub-icon.svg",
   goldenSquare: "/svg/golden-sqaure.svg",
   kitchen: "/svg/kitchen.svg",
-
-
-
-
 };
